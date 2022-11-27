@@ -47,7 +47,7 @@ const Hero = () => (
           <img
             src="/cover.png"
             alt="cover"
-            className='w-full sm:h-500px h-300px object-cover rounded-tl-[140px] z-10 relative'
+            className='w-full sm:h-[500px] h-[300px] object-cover rounded-tl-[140px] z-10 relative'
           />
 
           <a href="#explore">
