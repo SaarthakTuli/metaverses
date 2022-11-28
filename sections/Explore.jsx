@@ -35,9 +35,7 @@ const Explore = () => {
                 index={index}
                 active={active}
                 handleClick={setActive}
-
               />
-
             ))
           }
 
