@@ -1,30 +1,29 @@
-import React, {useRef} from 'react'
-import { Canvas, useFrame } from "@react-three/fiber";
-import {OrbitControls, useGLTF} from "@react-three/drei";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 
 const Room = () => {
   return (
-    <div style={{
-      border: '2px solid red',
-      position: 'absolute',
-      top: "0",
-      left: "0",
-      height: "100%",
-      width: "100%",
-    }}>
+    <div
+      style={{
+        border: "2px solid red",
+        position: "absolute",
+        top: "0",
+        left: "0",
+        height: "100%",
+        width: "100%",
+      }}
+    >
       <Canvas>
-      <OrbitControls />
-      <ambientLight intensity={0.5} />
-      <Model />
-    </Canvas>
-
+        <OrbitControls />
+        <ambientLight intensity={0.5} />
+        <Model />
+      </Canvas>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Room
-
+export default Room;
 
 /* Model design to be used */
 
