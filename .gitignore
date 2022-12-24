@@ -37,3 +37,6 @@ next-env.d.ts
 
 # vscode
 .vscode
+
+# img for readme.md file
+img_readme

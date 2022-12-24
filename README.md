@@ -17,5 +17,11 @@ To obtain a build version in a `.next` file
 ## Showcase
 
 The website is live and can be viewed at:-
+<br /><br />
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9246701e-1365-4959-9df6-7eec33b832da/deploy-status)](https://app.netlify.com/sites/multiverse-madness/deploys)
+<br />
 https://multiverse-madness.netlify.app/
+
+## Preview
+
+<a href="https://multiverse-madness.netlify.app/" target="_blank"><img src="./img_readme/main.jpg" alt="preview page" /></a>
