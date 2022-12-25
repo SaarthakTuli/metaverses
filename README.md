@@ -33,7 +33,4 @@ https://multiverse-madness.netlify.app/
 ## Blender Project
 
 <a href="./img_readme/untitled.blend" download>
-<img src="./img_readme/blender_evee.png" alt="room" /></a>
-
-### Demo
-<a href="./img_readme/untitled.blend" download>download</a>
+<img src="./img_readme/blender_evee.png" alt="room" width="250" height="250" /></a>
