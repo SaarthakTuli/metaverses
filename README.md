@@ -1,16 +1,24 @@
 # Multiverse Madness
 
-This is a <b>Fully Responsive Frontend Web App</b> with different animations using <a href="https://reactjs.org/">React JS <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" alt="rjs" width="40px" height="40px" /></a>, it also contains a small <a href="https://www.blender.org/">Blender<img src="https://github.com/devicons/devicon/blob/master/icons/blender/blender-original.svg" alt="bln" width="40px" height="40px" /></a> project inside the multiverse worlds
+.white {
+  color: "white";
+}
+
+This is a <b>Fully Responsive Frontend Web App</b> with different animations using <a href="https://nextjs.org/">Next JS <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-line.svg" alt="rjs" width="40px" height="40px" class="white" /></a>, it also contains a small <a href="https://www.blender.org/">Blender<img src="https://github.com/devicons/devicon/blob/master/icons/blender/blender-original.svg" alt="bln" width="40px" height="40px" /></a> project inside the multiverse worlds
 
 ## Deployment
 
 You can deploy it on your local machine using:-
 
-`$ npm run dev`
+```bash
+$ npm run dev
+```
 
 To create a build version:-
 
-`$ npm run build`
+```bash
+$ npm run build
+```
 
 To obtain a build version in a `.next` file
 
