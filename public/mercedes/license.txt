@@ -1,0 +1,11 @@
+Model Information:
+* title:	MERCEDES PROJECT ONE
+* source:	https://sketchfab.com/3d-models/mercedes-project-one-1733a70259f44fe7947fe306e5149df6
+* author:	S3DCreation (https://sketchfab.com/S3DCreation)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "MERCEDES PROJECT ONE" (https://sketchfab.com/3d-models/mercedes-project-one-1733a70259f44fe7947fe306e5149df6) by S3DCreation (https://sketchfab.com/S3DCreation) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
