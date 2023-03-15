@@ -11,7 +11,9 @@ const Car = () => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <spotLight
+      <ambientLight intensity={1} />
+      <pointLight intensity={10} position={[0, 20, 6]} />
+      {/* <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -19,7 +21,7 @@ const Car = () => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={1} /> */}
       <primitive
         object={mercedes.scene}
         scale={2.5}
@@ -55,28 +57,38 @@ const Car = () => {
 
 function Mercedes() {
   return (
-    <Canvas
-      shadows
-      frameloop="demand"
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{ fov: 45, near: 0.1, far: 200, position: [-4, 3, 6] }}
+    <div
+      style={{
+        position: "absolute",
+        top: "0",
+        left: "0",
+        height: "100%",
+        width: "100%",
+      }}
     >
-      <Suspense fallback={<Loader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          // minPolarAngle={Math.PI / 2}
-        />
-        <Sky sunPosition={[100, 100, 20]} />
-        <ambientLight intensity={1} />
+      <Canvas
+        shadows
+        frameloop="demand"
+        gl={{ preserveDrawingBuffer: true }}
+        camera={{ fov: 45, near: 1, far: 200, position: [-10, 3, 6] }}
+      >
+        <Suspense fallback={<Loader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            // minPolarAngle={Math.PI / 2}
+          />
+          <Sky sunPosition={[100, 100, 20]} />
+          <ambientLight intensity={1} />
 
-        <Car />
-        <Physics>
-          <Ground />
-        </Physics>
-      </Suspense>
-      <Preload all />
-    </Canvas>
+          <Car />
+          <Physics>
+            <Ground />
+          </Physics>
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 }
 
