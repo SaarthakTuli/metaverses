@@ -2,9 +2,8 @@ import React, { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
 import { Canvas, extend } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Sky } from "@react-three/drei";
-import Loader from "./Loader";
 
-import { Ground } from "../../components/Canvas";
+import { Ground, Loader } from "../../components/Canvas";
 
 const Human = () => {
   const barbarian = useGLTF("/Barbarian/BarbarianWAxe.gltf");

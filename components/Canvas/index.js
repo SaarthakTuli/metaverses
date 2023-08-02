@@ -1,3 +1,4 @@
 import Ground from "./Ground";
+import Loader from "./Loader";
 
-export { Ground };
+export { Ground, Loader };
