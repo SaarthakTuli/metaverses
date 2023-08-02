@@ -8,14 +8,15 @@ export const Ground = () => {
     position: [0, -0.1, 0],
   }));
 
-  const texture = useLoader(TextureLoader, "/black-brick-texture.png");
+  // const texture = useLoader(TextureLoader, "/black-brick-texture.png");
 
   return (
     <mesh ref={ref}>
       <planeBufferGeometry attach="geometry" args={[100, 100]} />
       <meshStandardMaterial
         attach="material"
-        map={texture}
+        // map={texture}
+        color="#000000"
         normalScale={0.01}
       />
     </mesh>

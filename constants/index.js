@@ -3,26 +3,31 @@ export const exploreWorlds = [
     id: "world-1",
     imgUrl: "/planet-01.png",
     title: "The Formula 1",
+    link: "/World/Mercedes",
   },
   {
     id: "world-2",
     imgUrl: "/planet-02.png",
-    title: "The Upside Down",
+    title: "Barbarian Code",
+    link: "/World/Barbarian",
   },
   {
     id: "world-3",
     imgUrl: "/planet-03.png",
-    title: "Kadirojo Permai",
+    title: "Pokemon",
+    link: "/World/Charizard",
   },
   {
     id: "world-4",
     imgUrl: "/planet-04.png",
-    title: "Paradise Island",
+    title: "Gunsmith",
+    link: "/World/Sniper",
   },
   {
     id: "world-5",
     imgUrl: "/planet-05.png",
-    title: "Hawkins Labs",
+    title: "Aliens",
+    link: "/World/Spaceship",
   },
 ];
 

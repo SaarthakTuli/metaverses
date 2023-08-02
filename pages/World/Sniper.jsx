@@ -1,29 +1,28 @@
 import React, { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
-import { Canvas, extend, useThree } from "@react-three/fiber";
+import { Canvas, extend } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Sky } from "@react-three/drei";
 import Loader from "./Loader";
 
 import { Ground } from "../../components/Canvas";
 
-const Car = () => {
-  const mercedes = useGLTF("/mercedes/scene.gltf");
+const Gun = () => {
+  const sniper = useGLTF("/Sniper/Sniper.gltf");
+
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="0x000000" />
-      <ambientLight intensity={1} />
-      <pointLight intensity={10} position={[0, 20, 6]} />
+      <pointLight intensity={3} position={[0, 20, 6]} />
       <primitive
-        object={mercedes.scene}
-        scale={2.5}
-        position-y={0}
+        object={sniper.scene}
+        scale={0.7}
+        position-y={2.5}
         rotation-y={0}
       />
     </mesh>
   );
 };
 
-function Mercedes() {
+function Sniper() {
   return (
     <div
       style={{
@@ -43,18 +42,18 @@ function Mercedes() {
         <Suspense fallback={<Loader />}>
           <OrbitControls
             enableZoom={false}
-            maxPolarAngle={Math.PI / 2 - 0.3}
-            // minPolarAngle={Math.PI / 2 - 10}
+            maxPolarAngle={Math.PI / 2 - 0.5}
+            minPolarAngle={Math.PI / 2 - 10}
           />
-
           <Sky
             distance={450000}
             sunPosition={[5, 1, 8]}
             inclination={0}
             azimuth={0.25}
           />
+          <ambientLight intensity={1} />
 
-          <Car />
+          <Gun />
           <Physics>
             <Ground />
           </Physics>
@@ -65,4 +64,4 @@ function Mercedes() {
   );
 }
 
-export default Mercedes;
+export default Sniper;

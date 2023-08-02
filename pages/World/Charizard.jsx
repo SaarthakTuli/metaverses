@@ -1,21 +1,22 @@
 import React, { Suspense } from "react";
 import { Physics } from "@react-three/cannon";
-import { Canvas, extend, useThree } from "@react-three/fiber";
+import { Canvas, extend } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Sky } from "@react-three/drei";
 import Loader from "./Loader";
 
 import { Ground } from "../../components/Canvas";
 
-const Car = () => {
-  const mercedes = useGLTF("/mercedes/scene.gltf");
+const Pokemon = () => {
+  const spaceship = useGLTF("/Charizard/charizard.gltf");
+
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="0x000000" />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <ambientLight intensity={1} />
-      <pointLight intensity={10} position={[0, 20, 6]} />
+      <pointLight intensity={5} position={[0, 20, 6]} />
       <primitive
-        object={mercedes.scene}
-        scale={2.5}
+        object={spaceship.scene}
+        scale={40}
         position-y={0}
         rotation-y={0}
       />
@@ -23,7 +24,7 @@ const Car = () => {
   );
 };
 
-function Mercedes() {
+function Charizard() {
   return (
     <div
       style={{
@@ -44,7 +45,7 @@ function Mercedes() {
           <OrbitControls
             enableZoom={false}
             maxPolarAngle={Math.PI / 2 - 0.3}
-            // minPolarAngle={Math.PI / 2 - 10}
+            minPolarAngle={Math.PI / 2 - 10}
           />
 
           <Sky
@@ -53,8 +54,9 @@ function Mercedes() {
             inclination={0}
             azimuth={0.25}
           />
+          <ambientLight intensity={1} />
 
-          <Car />
+          <Pokemon />
           <Physics>
             <Ground />
           </Physics>
@@ -65,4 +67,4 @@ function Mercedes() {
   );
 }
 
-export default Mercedes;
+export default Charizard;
